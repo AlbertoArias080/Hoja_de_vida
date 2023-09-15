@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hoja de vida</title>
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+
+<body class="contenedor">
+  <!-- Barra navegacion-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+    <div class="container-fluid">
+      <img class="navbar-brand barraNav logo" src="images/logo.jpg"></img>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mi red</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Yo
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Perfil</a></li>
+              <li><a class="dropdown-item" href="#">Cuenta</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Gestionar</a></li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <!-- Encabezado-->
+  <img src="images/perfil.jpg" class="img-fluid fotoPerfil">
+  <section class="contenedorEdu">
+    <img src="images/banner.png" class="img-fluid" alt="...">
+
+    <div class="row">
+      <div class="col">
+        <h4>Gelber Alberto Arias Guzman</h4>
+        <h6>Estudiante Ingeniería de sistemas</h6>
+        <div>Colombia</div>
+      </div>
+      <div class="col">
+        <a href="https://www.bolsamercantil.com.co/" target="_blank">
+          <h6>BMC Bolsa Mercantil de Colombia</h6>
+        </a>
+        <a href="https://www.konradlorenz.edu.co/home-aspirantes/?perfil=1" target="_blank">
+          <h6>Fundacion Universitaria Konrad Lorenz</h6>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- Analisis-->
+  <section class="contenedorEdu">
+    <div class="mb-3 textoInt">
+      <h4>Analisis</h4>
+      <div class="bi bi-eye "> Solo para ti</div>
+    </div>
+    <div class="row ">
+      <div class="col textoInt">
+        <div class="bi bi-people-fill"> 8 visualizaciones del perfil</div>
+      </div>
+      <div class="bi bi-search col"> 6 Apariciones en busqueda
+        <div>Mira con qué frecuencia apareces en los resultados de busqueda</div>
+
+      </div>
+      <div class="col">
+      </div>
+    </div>
+
+    </div>
+  </section>
+
+  <!-- Recursos-->
+  <section class="contenedorEdu">
+    <div class="mb-3 textoInt">
+      <h4>Recursos</h4>
+      <div class="bi bi-eye "> Solo para ti</div>
+    </div>
+    <div class="row ">
+      <div class="col textoInt">
+        <h6 class="bi bi-router-fill"> Modo de creadores de contenido. <button>Desactivado</button></h6>
+        <div>Facilita que te descubran, muestra contenido en tu perfil y obten acceso a las herramientas para creadores.</div>
+      </div>
+    </div>
+
+    <div class="row ">
+      <h1></h1>
+      <div class="col textoInt">
+        <h6 class="bi bi-people-fill"> Mi red</h6>
+        <div>Ve y gestiona tus contactos e intereses.</div>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+
+  <!-- Experiencia-->
+  <section class="contenedorEdu">
+    <div class="row">
+      <div class="col textoInt">
+        <h4>Experiencia</h4>
+      </div>
+      <div class="col col-2">
+        <!-- Button trigger modal -->
+        <ul class="nav nav-pills">
+          <li>
+            <i class="bi bi-plus-circle" data-bs-toggle="dropdown" role="button" aria-expanded="false"></i>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">Añadir
+                  puesto</a></li>
+              <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalDes" role="button">Añadir
+                  descanso
+                  profesional</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- Modal añadir puesto -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Añadir puesto</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Cargo</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Ingrese cargo que desempeño/a</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Labores</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <!-- Modal añadir descanso -->
+      <div class="modal fade" id="exampleModalDes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Añadir descanso profesional</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Tipo</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione una opcion</option>
+                    <option value="1">Luto</option>
+                    <option value="2">Año sabatico</option>
+                    <option value="3">Cumpleaños</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mb-3 textoInt">
+      <h4>Analista de bases de datos</h4>
+      <h6>BMC Bolsa Mercantil de Colombia · Jornada completa</h6>
+      <div>ago. 2021 - actualidad · 2 años 2 mesesago. 2021 - actualidad · 2 años 2 meses
+        Bogotá Colombia</div>
+    </div>
+  </section>
+
+  <!-- Educacion-->
+  <section class="contenedorEdu">
+    <div class="row">
+      <div class="col">
+        <h4>Educacion</h4>
+      </div>
+      <div class="col col-2">
+        <i class="bi bi-plus-circle" data-bs-toggle="modal" data-bs-target="#exampleModalEdu" role="button"></i>
+      </div>
+      <!-- Modal Educacion -->
+      <div class="modal fade" id="exampleModalEdu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Añadir Educacion</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Tipo</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Seleccione una opcion</option>
+                    <option value="1">Carrera</option>
+                    <option value="2">Diplomado</option>
+                    <option value="3">Curso</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Institucion</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Ingrese el nombre de la institucion en la que esta cursando
+                  </div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Titulo</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">Ingrese titulo</div>
+                </div>
+                <div class="mb-3">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col col-1">
+        <img class="logo" src="images/konrad.png" alt="">
+      </div>
+      <div class="mb-3 col col">
+        <h6 class="textoInt">Ingeniera de sistemas</h6>
+        <div class="textoInt">Fundacion Universitaria Konrad Lorenz</div>
+      </div>
+    </div>
+    <div class="div row border">
+      <div class="col col-1">
+        <img class="logo" src="images/u_de_cataluna.png" alt="">
+      </div>
+      <div class="mb-3 col col ">
+        <h6 class="textoInt">Universidad de Cataluña</h6>
+        <div class="textoInt">Big data - datascience</div>
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

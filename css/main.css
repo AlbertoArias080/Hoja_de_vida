@@ -1,0 +1,48 @@
+.contenedor {
+    background-color: rgb(223, 222, 221);
+
+}
+
+.barraNav {
+    margin-left: 500px !important;
+}
+
+.logo {
+    width: 60px;
+    margin-left: 10px;
+
+}
+
+.fotoPerfil {
+    width: 180px !important;
+    margin-top: 75px !important;
+    border-radius: 50%   !important;
+    margin-left: 540px !important;
+    margin-right: 10px !important;
+    position: absolute !important;
+}
+
+.boton{
+    margin-bottom: 5px !important;
+    margin-left: 5px;
+
+}
+
+.contenedorEdu {
+    margin-top: 10px;
+    margin-left: 525px;
+    margin-right: 598px;
+    background-color: white;
+    border-radius: var(--corner-radius-medium) !important;
+
+}
+
+.textoInt{
+    margin-left: 10px;
+
+}
+
+.border{
+    border-top: solid 1px ;
+    border-color: rgb(194, 192, 191);
+}
